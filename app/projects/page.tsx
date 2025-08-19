@@ -36,6 +36,10 @@ const ProjectsPage = () => {
           gameplay was simple, this project taught me about lobbying and client-server interaction in the Unity Engine, and it
           taught me a lot about using AWS for server hosting.
         </StoryCard>
+        <StoryCard title="Bound by the Book" link="" linkText="See Project">
+          The Bound by the Book project was a database that emulated a fictional bookstore retail company. The database stored information
+          on the inventory, customers, and employees. It utilized SQL and was mapped out in depth with an EERD chart.
+        </StoryCard>
       </PageWrapper>
     </>
   );

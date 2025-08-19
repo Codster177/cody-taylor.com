@@ -73,6 +73,16 @@ export default function Home() {
             description="My lastest project has been my personal site. You are on this right now!">
           </TimelineComp>
           <TimelineComp 
+            title="Junior Year Summer Semester Classes" 
+            timePeriod="May 12th, 2025 - July 31st, 2025" 
+            description="The following are the classes I took at the University of Central Florida
+            for my junior year summer semester.">
+              <ul className="list-disc">
+                <li>PHY 2049 - Physics 2 using Calculus</li>
+                <li>MAC 2313 - Calculus with Analytic Geometry 3</li>
+              </ul>
+          </TimelineComp>
+          <TimelineComp 
             title="Junior Year Spring Semester Classes" 
             timePeriod="January 8th, 2025 - April 29th, 2025" 
             description="The following are the classes I took at the University of Central Florida
@@ -88,14 +98,22 @@ export default function Home() {
             title="Junior Year Fall Semester Classes" 
             timePeriod="August 19th, 2024 - December 6th, 2024" 
             description="The following are the classes I took at the University of Central Florida
-            for my junior year fall semester."
-            end={true}>
+            for my junior year fall semester.">
               <ul className="list-disc">
                 <li>CDA 3103C - Computer Logic and Organization</li>
                 <li>ENC 3241 - Technical Writing</li>
                 <li>CIS 3360 - Security in Computing</li>
                 <li>COP 3502C - Computer Science 1</li>
               </ul>
+          </TimelineComp>
+          <TimelineComp 
+            title="Transfer to University of Central Florida" 
+            timePeriod="August 19th, 2024" 
+            description="Following my sophomore spring semester in 2024, I transfered to the University
+            of Central Florida. Although I left Florida Polytechnic University, I am extremely thankful
+            for my time there. The environment pushed my aspiration and ambition forward in a way that 
+            another school likely would have not. "
+            end={true}>
           </TimelineComp>
         </Timeline>
 
