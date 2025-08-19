@@ -21,9 +21,9 @@ const StoryCard = ({
 }: Props) => {
   function heroDesign() {
     if (textRight) {
-      return "hero-content flex-col lg:flex-row";
+      return "hero-content flex-col lg:flex-row min-w-full justify-start";
     } else {
-      return "hero-content flex-col lg:flex-row-reverse";
+      return "hero-content flex-col lg:flex-row-reverse min-w-full justify-start";
     }
   }
 
@@ -31,7 +31,7 @@ const StoryCard = ({
   let buttonBool = link == "" ? false : true;
 
   return (
-    <div className="hero bg-base-200 min-h-100 px-25">
+    <div className="hero bg-base-200 min-h-100 px-25 mb-5">
       <div className={heroDesign()}>
         {imageBool && (
           <img src={image} className="max-w-sm rounded-lg shadow-2xl" />

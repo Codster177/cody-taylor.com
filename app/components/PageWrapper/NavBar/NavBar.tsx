@@ -9,17 +9,17 @@ interface Props {
 }
 
 const NavBar = ({ websiteName = "cody-taylor.com", className = "" }: Props) => {
-  const projectsList = [
-    "Symptomatch",
-    "Time Management Calculator",
-    "Bound by the Book",
-  ];
-  const gamesList = [
-    "Boomerang Bunnie",
-    "Growing Up",
-    "Floral Felines",
-    "Stray Spirit",
-  ];
+  // const projectsList = [
+  //   "Symptomatch",
+  //   "Time Management Calculator",
+  //   "Bound by the Book",
+  // ];
+  // const gamesList = [
+  //   "Boomerang Bunnie",
+  //   "Growing Up",
+  //   "Floral Felines",
+  //   "Stray Spirit",
+  // ];
 
   if (className != "")
   {
@@ -39,12 +39,18 @@ const NavBar = ({ websiteName = "cody-taylor.com", className = "" }: Props) => {
       </div>
       <div role="tablist" className="tabs">
         <NavBarItem linkString="./">Home</NavBarItem>
-        <NavBarItem dropDownList={projectsList} linkString="/projects">
+        <NavBarItem linkString="/projects">
+          Projects
+        </NavBarItem>
+        <NavBarItem linkString="/games">
+          Games
+        </NavBarItem>
+        {/* <NavBarItem dropDownList={projectsList} linkString="/projects">
           Projects
         </NavBarItem>
         <NavBarItem dropDownList={gamesList} linkString="/games">
           Games
-        </NavBarItem>
+        </NavBarItem> */}
         {/* <NavBarItem>Resume</NavBarItem> */}
         <NavBarItem linkString="/contact">Contact</NavBarItem>
         <div className="divider divider-horizontal" />
